@@ -8,7 +8,6 @@ storagekey=`${contestId}[${index}]`;
 console.log(storagekey)
 // Get key and secret 
 function main(){
-console.log(chrome.storage.local.getKeys());
 if (chrome.storage.local.get(['apiKey','apiSecret',`${storagekey}`],(result)=>{
         console.log(result[storagekey]);
         if(result.apiKey && result.apiSecret && !result[storagekey]){
