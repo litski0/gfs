@@ -5,11 +5,9 @@ const contestId=parseInt(location.href.split("/")[5])
 const index=location.href.split("/")[6]
 friends_submission=[];
 storagekey=`${contestId}[${index}]`;
-console.log(storagekey)
 // Get key and secret 
 function main(){
 if (chrome.storage.local.get(['apiKey','apiSecret',`${storagekey}`],(result)=>{
-        console.log(result[storagekey]);
         if(result.apiKey && result.apiSecret && !result[storagekey]){
             key=result.apiKey;
             secret=result.apiSecret;
@@ -206,7 +204,7 @@ async function getColor(friends_submission){
 
   chrome.storage.local.set(
                 {[storagekey]:friends_submission,
-            },()=> {console.log("setted data")});
+            },()=> {});
   return friends_submission
   
 }
