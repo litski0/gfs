@@ -113,11 +113,12 @@ async function changeHtml(cache=false){
     
       for (element of friends_submission){
       node=document.createElement("tr");
-      node.innerHTML=`
-          <td class="bottom user-${element[2]}" style="border: 1px solid rgb(185, 185, 185); border-left:none;"><strong>${element[0]}</strong></td>
-          <td class="left bottom" style="border:1px solid rgb(185, 185, 185);border-right:none;"><a href="/contest/${contestId}/submission/${element[1]}">${element[1]}</a></td>`      
-      table.appendChild(node);
-      }
+        node.innerHTML=`
+            <td class="bottom user-${element[2]}" style="border: 1px solid rgb(185, 185, 185); border-left:none;"><strong>${element[0]}</strong></td>
+            <td class="left bottom" style="border:1px solid rgb(185, 185, 185);border-right:none;"><a href="/contest/${contestId}/submission/${element[1]}" target="_blank">${element[1]}</a></td>`      
+          
+        table.appendChild(node);
+    }
       node=document.createElement("tr");
       node.innerHTML=`<td colspan="2"><button id="refresh">Refresh List</button></td>`
       table.appendChild(node);
@@ -180,16 +181,16 @@ async function getColor(friends_submission){
       else if (rank==="expert"){
         rColor='blue'
       }
-      else if (rating ==="candidate master"){
+      else if (rank ==="candidate master"){
         rColor='violet'
       }
-      else if (rating==="master" || rating === "international master"){
+      else if (rank==="master" || rank === "international master"){
         rColor='orange'
       }
-      else if (rating === "grandmaster" || rating === "international grandmaster"){
+      else if (rank === "grandmaster" || rank === "international grandmaster"){
         rColor='red'
       }
-      else if (rating === "legendary grandmaster"){
+      else if (rank === "legendary grandmaster"){
         rColor="legendary"
       }
     element[2]=rColor      

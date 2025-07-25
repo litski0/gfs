@@ -1,7 +1,7 @@
 {
   "name": "GetFriendsSubmission",
   "description": "Get Your Friends' Accepted Submission on a Particular Problem on Codeforces",
-  "version": "1.0",
+  "version": "1.5.2",
   "manifest_version": 3,
   "action": {
     "default_popup": "popup.html"
