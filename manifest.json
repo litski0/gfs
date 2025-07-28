@@ -1,7 +1,7 @@
 {
   "name": "GetFriendsSubmission",
   "description": "Get Your Friends' Accepted Submission on a Particular Problem on Codeforces",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "manifest_version": 3,
   "action": {
     "default_popup": "popup.html"
@@ -10,7 +10,8 @@
     {
       "js": ["scripts/content.js"],
       "matches": [
-        "https://codeforces.com/problemset/problem/*/*"
+        "https://codeforces.com/problemset/problem/*/*",
+        "https://codeforces.com/contest/*/problem/*"
       ]
     }
   ],

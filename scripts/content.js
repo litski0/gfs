@@ -1,8 +1,15 @@
 
 let key="";
 let secret="";
-const contestId=parseInt(location.href.split("/")[5])
-const index=location.href.split("/")[6]
+let contestId;
+let index;
+if (location.href.split("/")[3]==="problemset"){
+contestId=parseInt(location.href.split("/")[5])
+}
+else if (location.href.split("/")[3]==="contest"){
+  contestId=parseInt(location.href.split("/")[4])
+}
+index=location.href.split("/")[6];
 friends_submission=[];
 storagekey=`${contestId}[${index}]`;
 // Get key and secret 
