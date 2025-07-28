@@ -17,5 +17,3 @@ The extension would support both **problemset** as well as **contest** url from 
 ## Links
 
 Heres the Video Guide [GFS Setup Tutorial](https://www.youtube.com/watch?v=Iw5SZJwiiEQ).
-
-
