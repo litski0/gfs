@@ -11,7 +11,7 @@ To get started, you would have to:
 7. **To Stop the Extension**: Simply click on "Delete Api from Codeforces" and click on cross mark on the codeforces website. and to delete api from extension click on "Delete Api from Extension" and then click on "Delete", your api would have been deleted. 
 
 ## Note
-This extension would currently only work on **problemset** url of the codeforces website and **not** the **contest** url of codeforces website.
+The extension would support both **problemset** as well as **contest** url from **v1.5.3**. Earlier version would only support **problemset**
 
 
 ## Links
